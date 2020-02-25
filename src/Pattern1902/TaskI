@@ -1,0 +1,14 @@
+package Pattern1902;
+
+public interface TaskI {
+
+    void setState(Class<? extends State> aClass);
+
+    void up(String... args);
+
+    void down(String... args);
+
+    TaskI copy();
+
+    void setId(Integer id);
+}
